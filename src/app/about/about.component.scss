@@ -1,8 +1,14 @@
+.about-background {
+    width: 100%;
+    background-color: var(--grey);
+}
+
 .about-container {
     padding-top: 64px;
     padding-bottom: 64px;
-    padding-left: 240px;
-    padding-right: 240px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: rgb(26, 26, 26);
 }
 
