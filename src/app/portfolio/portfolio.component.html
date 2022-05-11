@@ -1,0 +1,60 @@
+<div id="portfolio" class="container-portfolio">
+    <h2 *ngIf="isOpen" data-aos="fade-left">My Work</h2>
+    <div class="selection-switches" data-aos="fade-left">
+        <div *ngIf="isOpen" (click)="btnAll()" id="all" class="center">
+            <button class="btn">
+                  <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                  </svg>
+                  All
+              </button>
+        </div>
+        <div *ngIf="isOpen" (click)="btnAngular()" id="angular" class="center">
+            <button class="btn">
+                  <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                  </svg>
+                  Angular
+              </button>
+        </div>
+        <div *ngIf="isOpen" (click)="btnJavaScript()" id="javaScript" class="center">
+            <button class="btn">
+                  <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                  </svg>
+                  JavaScript
+              </button>
+        </div>
+    </div>
+    <div id="containerJS" class="container-picture" data-aos="fade-left">
+        <div *ngIf="isOpen" class="el-pollo-loco">
+            <div class="container-Link">
+                Jump and Run game
+                <a href="#" class="btn-flip" data-back="El Pollo Loco" data-front="Try it "></a>
+            </div>
+        </div>
+        <div *ngIf="isOpen" class="pokedex">
+            <div class="container-Link">
+                Pokedex with infos fetched from an api
+                <a href="#" class="btn-flip" data-back="PokeDex" data-front="Try it "></a>
+            </div>
+        </div>
+    </div>
+    <div id="containerAngular" class="container-picture" data-aos="fade-left">
+        <div *ngIf="isOpen" class="CRM-site">
+            <div class="container-Link">
+                Simple CRM Prototype
+                <a href="#" class="btn-flip" data-back="CRM Prototype" data-front="Try it "></a>
+            </div>
+        </div>
+        <div *ngIf="isOpen" class="ringOfFire">
+            <div class="container-Link">
+                Popular drinking game made with Angular
+                <a href="https://ring-of-fire-626f4.web.app" class="btn-flip" data-back="Ring of Fire" data-front="Try it "></a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<nav class="navbar" *ngIf="!mobile">
+    <img routerLink="/" src="assets/img/logo-black.png" alt="logo_image" />
+
+
+
+    <div class="desktop-links">
+        <ul>
+            <li><a routerLink="/"><button class="glow-on-hover" type="button" >Home</button></a></li>
+            <li><a href="#Skills"><button class="glow-on-hover" type="button">Skills</button></a></li>
+            <li><a href="#portfolio"><button class="glow-on-hover" type="button" >Projects</button></a></li>
+            <li><a href="#about-me"><button class="glow-on-hover" type="button">About Me</button></a></li>
+            <li><a href="#contact"><button class="glow-on-hover" type="button">Contact Me</button></a></li>
+            <li><a routerLink="/imprint"><button class="glow-on-hover" type="button" >Imprint</button></a></li>
+        </ul>
+    </div>
+</nav>
+
+<nav class="navbar-mobile" *ngIf="mobile">
+    <img routerLink="/" src="assets/img/logo-black.png" alt="logo_image" />
+    <input type="checkbox" id="toggle_button">
+    <label for="toggle_button" class="toggle_button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+    </label>
+    <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+        <li><a routerLink="/imprint">Imprint</a></li>
+    </ul>
+</nav>

@@ -1,0 +1,101 @@
+.contact-container {
+    padding-right: 240px;
+    padding-left: 240px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding-bottom: 40px;
+    height: 100vh;
+    h1 {
+        margin-top: 0;
+        font-size: 64px;
+        color: rgb(45, 252, 216);
+    }
+    span {
+        margin-bottom: 20px;
+        font-size: 20px;
+        color: #fff;
+    }
+}
+
+.contact-color-blue {
+    color: rgb(45, 252, 216) !important;
+}
+
+.contact-color-red {
+    color: rgb(250, 39, 89) !important;
+    font-size: 26px !important;
+}
+
+.message-input {
+    margin-top: 10px;
+    width: 100%;
+    height: 250px;
+    background-color: #1a1a1a;
+    color: #fff;
+    resize: none;
+    border: none;
+}
+
+input {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    background-color: #1a1a1a;
+    border: none;
+}
+
+.contact-sub-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid rgb(45, 252, 216);
+    outline: none;
+    transition: .5s ease-in-out;
+}
+
+svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: rgb(45, 252, 216);
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: .5s ease-in-out;
+}
+
+.btn:hover {
+    transition: .5s ease-in-out;
+    background: rgba(51, 214, 187, 0.6);
+}
+
+.btn:hover svg {
+    stroke-dashoffset: -480;
+}
+
+.btn:focus {
+    background: rgb(15, 253, 214);
+}
+
+.send-button {
+    width: 140px;
+    height: 40px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}

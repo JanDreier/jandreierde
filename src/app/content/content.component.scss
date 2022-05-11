@@ -1,0 +1,95 @@
+.content-container {
+    padding-left: 240px;
+    padding-right: 240px;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    overflow: hidden;
+}
+
+.content-sub-container {
+    box-sizing: border-box;
+    flex-direction: column;
+    display: flex;
+    background-color: black;
+}
+
+.p {
+    font: none;
+    color: white;
+    padding-bottom: 16px;
+    font-size: 64px;
+    font-weight: 700;
+    animation: animationLeft 0.5s ease-in-out;
+}
+
+@keyframes animationLeft {
+    from {
+        transform: translate(-500px);
+        opacity: 0
+    }
+    to {
+        transform: translate(0px);
+        opacity: 1
+    }
+}
+
+img {
+    height: 350px;
+    border-radius: 50%;
+    animation: animationRight 0.5s ease-in-out;
+}
+
+@keyframes animationRight {
+    from {
+        transform: translate(500px);
+        opacity: 0
+    }
+    to {
+        transform: translate(0px);
+        opacity: 1
+    }
+}
+
+strong {
+    color: rgb(250, 39, 89);
+}
+
+.btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid rgb(45, 252, 216);
+    outline: none;
+    transition: .5s ease-in-out;
+}
+
+svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: rgb(45, 252, 216);
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: .5s ease-in-out;
+}
+
+.btn:hover {
+    transition: .5s ease-in-out;
+    background: rgba(51, 214, 187, 0.6);
+}
+
+.btn:hover svg {
+    stroke-dashoffset: -480;
+}
+
+.btn:focus {
+    background: rgb(15, 253, 214);
+}
