@@ -11,8 +11,8 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    padding-top: 40px;
     padding-bottom: 40px;
-    height: 100vh;
     h1 {
         margin-top: 0;
         font-size: 64px;
@@ -103,4 +103,22 @@ svg {
     justify-content: flex-end;
     align-items: center;
     margin-top: 20px;
+}
+
+@media(max-width:1300px) {
+    .contact-container {
+        width: 80%;
+    }
+}
+
+@media(max-width:1100px) {
+    .contact-container {
+        width: 90%;
+    }
+}
+
+@media(max-width:950px) {
+    .contact-container {
+        width: 90%;
+    }
 }
