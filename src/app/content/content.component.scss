@@ -16,8 +16,8 @@
 }
 
 img {
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     border-radius: 50%;
     object-fit: cover;
     object-position: 50% 15%;
@@ -151,6 +151,8 @@ svg {
 
 @media(max-width:450px) {
     .content-container {
+        padding-top: 170px;
+        padding-bottom: 110px;
         width: 95%;
         img {
             height: 200px;

@@ -11,6 +11,9 @@ export class MenuComponent implements OnInit {
   toggleButton:any = document.getElementsByClassName('toggle-button')[0];
   navbarLinks = document.getElementsByClassName('navbar-links')[0];
   mobile: boolean;
+  addingOpen = document.getElementById('hmbBtn');
+  menuOpen: boolean = false;
+
 
 
 
@@ -25,10 +28,14 @@ export class MenuComponent implements OnInit {
         this.mobile=false;
       }
     });
+
+
   }
 
   ngOnInit(): void {
 
   }
+
+
 
 }

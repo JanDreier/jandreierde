@@ -3,13 +3,13 @@
         <div class="contact-sub-container">
             <h1 data-aos="fade-left">Contact me.</h1>
             <span data-aos="fade-left">Get in touch via the form below, or by emailing <span class="contact-color-blue">Dreier-96@web.de</span></span>
-            <form data-aos="fade-left">
+            <form ngNativeValidate data-aos="fade-left" action="https://formsubmit.co/971272d57cc4824e2a8b07b04970fce3" method="POST">
                 <span>Name<span class="contact-color-red">*</span></span>
-                <input name="name" type="text" placeholder="Enter your name">
+                <input type="text" name="name" placeholder="Enter your name" required/>
                 <span>Email address<span class="contact-color-red">*</span></span>
-                <input name="email" type="email" placeholder="Enter your Email address">
+                <input type="email" name="email" placeholder="Enter your Email address" required/>
                 <span>Message<span class="contact-color-red">*</span></span>
-                <textarea class="message-input" name="message" placeholder="Enter your message"></textarea>
+                <textarea class="message-input" type="text" name="message" placeholder="Enter your message" required></textarea>
                 <div class="send-button">
                     <div class="center"><button class="btn" type="submit">
                 <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
@@ -20,11 +20,6 @@
               </button>
                     </div>
                 </div>
-
-
-
-
-
             </form>
         </div>
     </div>

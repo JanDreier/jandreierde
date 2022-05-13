@@ -102,7 +102,7 @@
       }
   }
   
-  .toggle_button {
+  .toggle-button {
       width: 30px;
       height: 23px;
       position: absolute;
@@ -113,7 +113,9 @@
       justify-content: space-between;
   }
   
-  .bar {
+  .bar,
+  .bar-before,
+  .bar-after {
       height: 4px;
       width: 100%;
       background-color: white;
@@ -126,7 +128,7 @@
   }
   
   @media(max-width: 1000px) {
-      .toggle_button {
+      .toggle-button {
           display: flex;
       }
       .navbar-mobile ul {
@@ -151,7 +153,7 @@
           padding-top: 30px;
           padding-bottom: 30px;
       }
-      #toggle_button:checked~ul {
+      #toggle-button:checked~ul {
           display: block;
       }
   }

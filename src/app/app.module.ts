@@ -13,6 +13,12 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatRippleModule} from '@angular/material/core';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+
+
+
 
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
@@ -35,6 +41,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     GridListComponent
   ],
   imports: [
+    MatIconModule,
+    MatButtonModule,
+    MatRippleModule,
     MatToolbarModule,
     ReactiveFormsModule,
     MatGridListModule,

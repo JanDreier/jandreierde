@@ -10,6 +10,7 @@
 h2 {
     font-size: 48px;
     color: white;
+    padding-top: 20px;
     margin-bottom: 80px;
     margin-top: 80px;
 }
@@ -75,6 +76,7 @@ h2 {
 .container-picture {
     display: flex;
     justify-content: center;
+    animation: animationRight 0.5s ease-in-out;
     img {
         object-fit: cover;
         height: 250px;
@@ -428,6 +430,17 @@ h2 {
                 }
             }
         }
+    }
+}
+
+@keyframes animationRight {
+    from {
+        transform: translate(500px);
+        opacity: 0
+    }
+    to {
+        transform: translate(0px);
+        opacity: 1
     }
 }
 
